@@ -1,2 +1,3 @@
-# demo_project_python_super_basic
+# There are many demo, each of them belongs to a study session
 It just demo, nomore
+hace a nice day
