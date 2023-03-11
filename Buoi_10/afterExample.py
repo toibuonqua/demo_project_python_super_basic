@@ -21,12 +21,12 @@ def changeWord():
     global chi_muc, number_stop, ma_after, x_ban_dau
     if chi_muc < number_stop:
         label_show.config(image=anh_nhan_vat[chi_muc])
-        x_ban_dau = x_ban_dau + 1
+        x_ban_dau = x_ban_dau + 10
         label_show.place(y=0, x=x_ban_dau)
         chi_muc = chi_muc + 1
         if chi_muc == number_stop:
             chi_muc = 0
-        ma_after = root.after(200, changeWord)
+        ma_after = root.after(100, changeWord)
         print(ma_after)
 
 def stop():
