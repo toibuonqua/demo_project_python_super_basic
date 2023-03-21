@@ -5,7 +5,12 @@ class mario_character:
     
     def __init__(self):
         self.list_run = [
-            # ImageTk.PhotoImage(Image.open('image/ima_not_bg/mario_run_1.png')),
+            # ImageTk.PhotoImage(Image.open('image/ima_not_bg/mario_run_1.png').convert('RGBA')),
+            # ImageTk.PhotoImage(Image.open('image/ima_not_bg/mario_run_2.png').convert('RGBA')),
+            # ImageTk.PhotoImage(Image.open('image/ima_not_bg/mario_run_3.png').convert('RGBA')),
+            # ImageTk.PhotoImage(Image.open('image/ima_not_bg/mario_run_4.png').convert('RGBA')),
+            # ImageTk.PhotoImage(Image.open('image/ima_not_bg/mario_run_5.png').convert('RGBA')),
+            # ImageTk.PhotoImage(Image.open('image/ima_not_bg/mario_run_6.png').convert('RGBA')),
             PhotoImage(file="image/ima_not_bg/mario_run_1.png").subsample(1),
             PhotoImage(file="image/ima_not_bg/mario_run_2.png").subsample(1),
             PhotoImage(file="image/ima_not_bg/mario_run_3.png").subsample(1),

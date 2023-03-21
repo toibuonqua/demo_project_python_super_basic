@@ -34,7 +34,7 @@ def stop():
 
 label_show = Label(root, image=anh_nhan_vat[0])
 button_action = Button(
-    root, 
+    root,
     text="Chạy chương trình", 
     command=changeWord
 )
