@@ -1,5 +1,5 @@
 from tkinter import *
-from mario_characer import mario_character
+from mario_character import mario_character
 from map_loading import map_loading
 
 # Thiết lập màn hình giao diện chính
@@ -44,7 +44,7 @@ def fall():
     if charPosiY < 300:
         changeImage(currentCharIma, currentMapIma, [charPosiX, charPosiY])
         charPosiY += 10
-        code_fall = root.after(40, fall)
+        code_fall = root.after(80, fall)
     else:
         ground = True
         print(ground)
@@ -57,13 +57,13 @@ def animationWidget(actionRun=False, actionJump=False):
         currentCharIma = mario.run()
         currentMapIma = map.next_frame()
         changeImage(currentCharIma, currentMapIma, [charPosiX, charPosiY])
-        ma_run_after = root.after(40, lambda: animationWidget(actionRun=True))
+        ma_run_after = root.after(80, lambda: animationWidget(actionRun=True))
     if actionJump:
         if charPosiY > 200:
             changeImage(currentCharIma, currentMapIma, [charPosiX, charPosiY])
             charPosiY -= 10
             ground = False
-            root.after(40, lambda: animationWidget(actionJump=True))
+            root.after(80, lambda: animationWidget(actionJump=True))
         else:
             print(ground)
             fall()

@@ -1,5 +1,5 @@
 from tkinter import *
-from mario_characer import mario_character
+from mario_character import mario_character
 from map_loading import map_loading
 
 # Thiết lập màn hình giao diện chính
